@@ -43,7 +43,66 @@ html {
   font-family: Inter, sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+.inline {
+  display: inline-block;
+}
+
 .card {
-  max-width: 25rem;
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.heading-primary {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.heading-secondary {
+  font-size: 0.8rem;
+  color: hsl(75, 94%, 57%);
+  margin-top: 0.5rem;
+}
+
+.job-description {
+  font-size: 0.8rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  width: 20rem;
+  height: 2.8rem;
+  margin-top: 1rem;
   background-color: hsl(0, 0%, 20%);
+  text-decoration: none;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.4rem;
+}
+
+.btn:active,
+.btn:hover {
+  background-color: hsl(0, 0%, 31%);
+}
+
+.profile-avatar-img {
+  width: 6rem;
+  border-radius: 50%;
 }
